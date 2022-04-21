@@ -4,6 +4,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +16,12 @@ class MainActivity : AppCompatActivity() {
 
 //попробовать заприхать нормальнрую имплементацию
     private fun setListeners() {
+    val box_one_text: View = findViewById(R.id.box_one_text)
+    val box_two_text: View = findViewById(R.id.box_two_text)
+    val box_three_text: View = findViewById(R.id.box_three_text)
+    val box_four_text: View = findViewById(R.id.box_four_text)
+    val box_five_text: View = findViewById(R.id.box_five_text)
+
         val clickableViews: List<View> =
             listOf(box_one_text, box_two_text, box_three_text,
                 box_four_text, box_five_text)
